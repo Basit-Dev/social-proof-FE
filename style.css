@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'spartan', sans-serif;
+  font-family: "spartan", sans-serif;
   color: hsl(300, 43%, 22%);
   line-height: 1;
 }
@@ -32,9 +32,9 @@ html {
   width: 38%;
 }
 .heading_section h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 .heading_section p {
   font-size: 1.4rem;
@@ -45,7 +45,9 @@ html {
   width: 62%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  position: relative;
+  border: solid red;
 }
 .review_headers {
   width: 60%;
@@ -65,13 +67,14 @@ html {
   font-size: 1.4rem;
   font-weight: 700;
   padding-top: 0.3rem;
-
+}
+.review_headers:nth-child(1) {
+  position: relative;
+  right: 14rem;
 }
 .review_headers:nth-child(2) {
- margin-left: 13rem;
-}
-.review_headers:nth-child(3) {
- margin-right: -28rem;
+  position: relative;
+  right: 7rem;
 }
 .bottom_content {
   margin-top: 10rem;
@@ -85,59 +88,69 @@ html {
   padding: 3rem;
   border-radius: 10px;
   width: 32%;
-  height:fit-content;
-} 
+  position: relative;
+}
 .hero_card_section > p {
   color: white;
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.5;
-} 
+}
 .caption_header {
-   display: flex;
-   align-items: center;
-   margin: 1rem 0 3rem 0;
- }
- .caption_header img {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+}
+.caption_header img {
   border-radius: 50%;
   width: 50px;
 }
- .caption_header_text {
+.caption_header_text {
   margin-left: 2rem;
- }
+}
 .caption_header_text h2 {
   color: white;
   font-size: 1.3rem;
- }
- .caption_header_text p {
+}
+.caption_header_text p {
   color: hsl(333, 80%, 67%);
   font-size: 1.2rem;
   margin-top: 1rem;
 }
 .hero_card_section:nth-child(2) {
-  margin-top: 2rem;
+  position: relative;
+  top: 2rem;
 }
 .hero_card_section:nth-child(3) {
-  margin-top: 4rem;
+  position: relative;
+  top: 4rem;
 }
 
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
 .hero_card_section:hover {
   color: green;
   animation: bounce 1s;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: lightblue;
+  }
 }
